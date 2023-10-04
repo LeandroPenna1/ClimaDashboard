@@ -1,0 +1,164 @@
+body {
+    background-color: rgb(30, 29, 50);
+}
+
+.contenedor {
+    text-align: center;
+    color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    font-size: large;
+}
+
+.ahora {
+  border-width: 2px;
+  border-style: solid; /* Cambiar el estilo del borde a punteado */
+  border-color: rgba(60, 60, 60, 0.932); /* Cambiar el color del borde a rojo */
+  border-radius: 10px; /* Añadir esquinas redondeadas */
+  height: 40px;
+  width: 100%;
+  margin: 2px; /* Espacio entre los divs */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.dia {
+  flex: 0;
+  margin-top: 7px;
+  margin-left: 5px;
+}
+
+.hora {
+  flex: 0;
+  margin-top: 7px;
+  margin-right: 5px;
+  
+}
+
+.temperatura {
+    border-width: 2px;
+    border-style: solid; /* Cambiar el estilo del borde a punteado */
+    border-color: rgba(60, 60, 60, 0.932); /* Cambiar el color del borde a rojo */
+    border-radius: 10px; /* Añadir esquinas redondeadas */
+    height: 460px;
+    width: 200px;
+    margin: 2px; /* Espacio entre los divs */
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+
+.hoy {
+    border-width: 2px;
+    border-style: solid; /* Cambiar el estilo del borde a punteado */
+    border-color: rgba(60, 60, 60, 0.932); /* Cambiar el color del borde a rojo */
+    border-radius: 10px; /* Añadir esquinas redondeadas */
+    height: 110px;
+    width: 947px;
+    margin: 5px; /* Espacio entre los divs */
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+.titulohoy {
+  margin-top: 0px;
+  max-height: 15px;
+}
+
+.hora1 {
+    border-width: 2px;
+    border-style: solid; /* Cambiar el estilo del borde a punteado */
+    border-color: rgba(60, 60, 60, 0.932); /* Cambiar el color del borde a rojo */
+    border-radius: 10px; /* Añadir esquinas redondeadas */
+    height: 50px;
+    width: 10px;
+    margin-top: 22px;
+    margin-left: 40px;
+    display: inline-block
+}
+.hora2 {
+    border-width: 2px;
+    border-style: solid; /* Cambiar el estilo del borde a punteado */
+    border-color: rgba(60, 60, 60, 0.932); /* Cambiar el color del borde a rojo */
+    border-radius: 10px; /* Añadir esquinas redondeadas */
+    height: 30px;
+    width: 10px;
+    margin-top: 22px;
+    margin-left: 40px;
+    display: inline-block;
+}
+  
+.transporte {
+  margin-top: 300px;
+  margin-left: 600px;
+  color: blanchedalmond;
+  position: absolute;
+}
+
+.maxmin {
+    border-width: 2px;
+    border-style: solid; /* Cambiar el estilo del borde a punteado */
+    border-color: rgba(60, 60, 60, 0.932); /* Cambiar el color del borde a rojo */
+    border-radius: 10px; /* Añadir esquinas redondeadas */
+    height: 460px;
+    width: 200px;
+    max-width: 150px;
+    margin: 5px; /* Espacio entre los divs */
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+.max {
+  border-width: 2px;
+  border-style: solid; /* Cambiar el estilo del borde a punteado */
+  border-color: rgba(60, 60, 60, 0.932); /* Cambiar el color del borde a rojo */
+  border-radius: 10px; /* Añadir esquinas redondeadas */
+  width: 90px;
+  margin: 1px;
+  height: 120px;
+}
+
+.min {
+  border-width: 2px;
+  border-style: solid; /* Cambiar el estilo del borde a punteado */
+  border-color: rgba(60, 60, 60, 0.932); /* Cambiar el color del borde a rojo */
+  border-radius: 10px; /* Añadir esquinas redondeadas */
+  width: 90px;
+  height: 120px;
+}
+
+.highlights {
+    border-width: 2px;
+    border-style: solid; /* Cambiar el estilo del borde a punteado */
+    border-color: rgba(60, 60, 60, 0.932); /* Cambiar el color del borde a rojo */
+    border-radius: 10px; /* Añadir esquinas redondeadas */
+    height: 70px;
+    width: 100%;
+    flex-direction: row;
+  }
+
+.hl {
+  border-width: 2px;
+  border-style: solid; /* Cambiar el estilo del borde a punteado */
+  border-color: rgba(60, 60, 60, 0.932); /* Cambiar el color del borde a rojo */
+  border-radius: 10px; /* Añadir esquinas redondeadas */
+  width: 160px;
+  margin-left: 20px;
+  height: 35px;
+  display: inline-block;
+  margin-top: -59px;
+}
+
+h2 {
+  font-size: 100px;
+  margin-top: 1px;
+}
+
+.grados {
+  font-size: 50px;
+  margin-top: 10px;
+}
