@@ -1,8 +1,9 @@
 import './App.css';
 import React from 'react';
-import Dashboard from './componentes/dashboard';
+import Dashboard from './componentesClima/dashboard';
 
 function App() {
+  
   return (
     <div className="App">
       <Dashboard />

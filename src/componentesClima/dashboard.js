@@ -24,8 +24,8 @@ function Dashboard() {
         <div className="hora1"></div>
         <div className="hora1"></div>
       </div>
-      <div className="transporte">
-        <h4>MAPA TRANSPORTE</h4>
+      <div className="transporte" id='trans'>
+        <h4>MAPA E INFO TRANSPORTE</h4>
       </div>
       <div className="maxmin">
         <h3>Máximas y Mínimas</h3>

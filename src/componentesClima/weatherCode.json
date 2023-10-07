@@ -1,0 +1,114 @@
+{
+    "0": {
+        "name": "Despejado",
+        "img_src": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/clear-day.svg"
+    },
+    "1": {
+        "name": "Principalmente despejado",
+        "img_src": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/clear-day.svg"
+    },
+    "2": {
+        "name": "Parcialmente nublado",
+        "img_src": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/partly-cloudy-day.svg"
+    },
+    "3": {
+        "name": "Nublado",
+        "img_src": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/cloudy.svg"
+    },
+    "45": {
+        "name": "Niebla",
+        "img_src": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/fog.svg"
+    },
+    "48": {
+        "name": "Neblina con escracha",
+        "img_src": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/haze.svg"
+    },
+    "51": {
+        "name": "Llovizna ligera",
+        "img_src": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/drizzle.svg"
+    },
+    "53": {
+        "name": "Llovizna moderada",
+        "img_src": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/overcast-drizzle.svg"
+    },
+    "55": {
+        "name": "Llovizna densa",
+        "img_src": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/extreme-drizzle.svg"
+    },
+    "56": {
+        "name": "Llovizna helada ligera",
+        "img_src": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/sleet.svg"
+    },
+    "57": {
+        "name": "Llovizna helada densa",
+        "img_src": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/overcast-sleet.svg"
+    },
+    "61": {
+        "name": "Lluvia leve",
+        "img_src": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/rain.svg"
+    },
+    "63": {
+        "name": "Lluvia moderada",
+        "img_src": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/overcast-rain.svg"
+    },
+    "65": {
+        "name": "Lluvia fuerte",
+        "img_src": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/extreme-rain.svg"
+    },
+    "66": {
+        "name": "Lluvia helada ligera",
+        "img_src": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/rain.svg"
+    },
+    "67": {
+        "name": "Lluvia helada fuerte",
+        "img_src": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/extreme-rain.svg"
+    },
+    "71": {
+        "name": "Caída de nieve ligera",
+        "img_src": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/snow.svg"
+    },
+    "73": {
+        "name": "Caída de nieve moderada",
+        "img_src": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/overcast-snow.svg"
+    },
+    "75": {
+        "name": "Caída de nieve fuerte",
+        "img_src": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/extreme-snow.svg"
+    },
+    "77": {
+        "name": "Copos de nieve",
+        "img_src": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/snow.svg"
+    },
+    "80": {
+        "name": "Lluvias leves",
+        "img_src": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/thunderstorms-rain.svg"
+    },
+    "81": {
+        "name": "Lluvias moderadas",
+        "img_src": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/thunderstorms-overcast-rain.svg"
+    },
+    "82": {
+        "name": "Lluvias fuertes",
+        "img_src": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/thunderstorms-extreme-rain.svg"
+    },
+    "85": {
+        "name": "Chubascos de nieve ligeros",
+        "img_src": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/thunderstorms-overcast-snow.svg"
+    },
+    "86": {
+        "name": "Chubascos de nieve fuertes",
+        "img_src": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/thunderstorms-extreme-snow.svg"
+    },
+    "95": {
+        "name": "Tormenta eléctrica",
+        "img_src": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/thunderstorms.svg"
+    },
+    "96": {
+        "name": "Tormenta eléctrica con granizo ligero",
+        "img_src": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/overcast-hail.svg"
+    },
+    "99": {
+        "name": "Tormenta eléctrica con granizo fuerte",
+        "img_src": "https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/extreme-hail.svg"
+    }
+}
