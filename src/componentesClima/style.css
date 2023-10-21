@@ -7,7 +7,6 @@ body {
     color: aliceblue;
     display: flex;
     flex-wrap: wrap;
-    max-width: 100%;
     font-size: large;
 }
 
@@ -67,29 +66,6 @@ body {
   margin-top: 0px;
   max-height: 15px;
 }
-
-.hora1 {
-    border-width: 2px;
-    border-style: solid; /* Cambiar el estilo del borde a punteado */
-    border-color: rgba(60, 60, 60, 0.932); /* Cambiar el color del borde a rojo */
-    border-radius: 10px; /* Añadir esquinas redondeadas */
-    height: 50px;
-    width: 10px;
-    margin-top: 22px;
-    margin-left: 40px;
-    display: inline-block
-}
-.hora2 {
-    border-width: 2px;
-    border-style: solid; /* Cambiar el estilo del borde a punteado */
-    border-color: rgba(60, 60, 60, 0.932); /* Cambiar el color del borde a rojo */
-    border-radius: 10px; /* Añadir esquinas redondeadas */
-    height: 30px;
-    width: 10px;
-    margin-top: 22px;
-    margin-left: 40px;
-    display: inline-block;
-}
   
 .transporte {
   margin-top: 180px;
@@ -136,27 +112,6 @@ body {
   height: 120px;
 }
 
-.highlights {
-    border-width: 2px;
-    border-style: solid; /* Cambiar el estilo del borde a punteado */
-    border-color: rgba(60, 60, 60, 0.932); /* Cambiar el color del borde a rojo */
-    border-radius: 10px; /* Añadir esquinas redondeadas */
-    height: 70px;
-    width: 100%;
-    flex-direction: row;
-  }
-
-.hl {
-  border-width: 2px;
-  border-style: solid; /* Cambiar el estilo del borde a punteado */
-  border-color: rgba(60, 60, 60, 0.932); /* Cambiar el color del borde a rojo */
-  border-radius: 10px; /* Añadir esquinas redondeadas */
-  width: 190px;
-  margin-left: 20px;
-  height: 35px;
-  display: inline-block;
-  margin-top: -59px;
-}
 
 h2 {
   font-size: 100px;
@@ -165,10 +120,89 @@ h2 {
 
 .grados {
   font-size: 50px;
-  margin-top: 10px;
+  margin-top: -10px;
 }
 
 .icon {
   margin-top: -120px;
   margin-left: 0px;
 }
+
+/* Temperaturas del dia */
+.hora1 {
+  border-width: 2px;
+  border-style: solid; /* Cambiar el estilo del borde a punteado */
+  border-color: rgba(60, 60, 60, 0.932); /* Cambiar el color del borde a rojo */
+  border-radius: 10px; /* Añadir esquinas redondeadas */
+  height: 50px;
+  width: 10px;
+  margin-top: 22px;
+  margin-left: 40px;
+  display: inline-block;
+  font-size: 10px;
+}
+.hora2 {
+  font-size: 10px;
+  border-width: 2px;
+  border-style: solid; /* Cambiar el estilo del borde a punteado */
+  border-color: rgba(60, 60, 60, 0.932); /* Cambiar el color del borde a rojo */
+  border-radius: 10px; /* Añadir esquinas redondeadas */
+  height: 50px;
+  width: 10px;
+  margin-top: 22px;
+  margin-left: 40px;
+  display: inline-block;
+}
+
+/* CONTENEDOR TEMPERATURA */
+.nombreCiudad {
+  margin-top: -20px;
+}
+.tempActual {
+  margin-top: -10px;
+}
+.estadoTiempo {
+  margin-top: -40px;
+}
+
+/* CONTENEDOR HIGHLIGHTS */
+
+.highlights {
+  border-width: 2px;
+  border-style: solid; /* Cambiar el estilo del borde a punteado */
+  border-color: rgba(60, 60, 60, 0.932); /* Cambiar el color del borde a rojo */
+  border-radius: 10px; /* Añadir esquinas redondeadas */
+  height: 70px;
+}
+.iconEC {
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  top: 50%; /* Ajustar la posición vertical de las imágenes */
+  transform: translateY(-50%); /* Centrar verticalmente las imágenes */
+}
+.hl strong {
+  margin-left: 40px;
+}
+.hl {
+  position: relative; 
+  text-align: left;
+  font-size: 15px;
+  border-width: 2px;
+  border-style: solid; /* Se cambia el estilo del borde a punteado */
+  border-color: rgba(60, 60, 60, 0.932); 
+  border-radius: 10px; /* Añade esquinas redondeadas */
+  width: 220px;
+  height: 30px;
+  display: inline-block;
+}
+
+
+/* MIN Y MAX */
+
+.iconMM {
+  height: 50px;
+  width: 50px;
+  margin-top: 0px;
+}
+
