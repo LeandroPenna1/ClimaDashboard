@@ -1,15 +1,13 @@
 {
   "files": {
-    "main.css": "/ClimaDashboard/static/css/main.073dda28.css",
-    "main.js": "/ClimaDashboard/static/js/main.d9eea06b.js",
-    "static/js/787.cf8f1c16.chunk.js": "/ClimaDashboard/static/js/787.cf8f1c16.chunk.js",
+    "main.css": "/ClimaDashboard/static/css/main.587685d0.css",
+    "main.js": "/ClimaDashboard/static/js/main.11ef9d0f.js",
     "index.html": "/ClimaDashboard/index.html",
-    "main.073dda28.css.map": "/ClimaDashboard/static/css/main.073dda28.css.map",
-    "main.d9eea06b.js.map": "/ClimaDashboard/static/js/main.d9eea06b.js.map",
-    "787.cf8f1c16.chunk.js.map": "/ClimaDashboard/static/js/787.cf8f1c16.chunk.js.map"
+    "main.587685d0.css.map": "/ClimaDashboard/static/css/main.587685d0.css.map",
+    "main.11ef9d0f.js.map": "/ClimaDashboard/static/js/main.11ef9d0f.js.map"
   },
   "entrypoints": [
-    "static/css/main.073dda28.css",
-    "static/js/main.d9eea06b.js"
+    "static/css/main.587685d0.css",
+    "static/js/main.11ef9d0f.js"
   ]
 }
