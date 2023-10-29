@@ -19,7 +19,6 @@ function Dashboard({data}) {
   const minutosHoy = fechaHoy.getMinutes();
   const opcionesMeses = {month: 'long'};
   const nombreDelMes = fecha.toLocaleString('es-ES', opcionesMeses);
-  console.log(nombreDelMes)
   const horaFormateada = `${horaHoy}:${minutosHoy}`;
   const opcionesDeFecha = { weekday: 'long' };
   const nombreDelDia = fechaHoy.toLocaleString('es-ES', opcionesDeFecha); // Esto usará el formato en español

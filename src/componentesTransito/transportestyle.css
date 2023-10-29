@@ -1,0 +1,54 @@
+.transporte {
+    margin-top: 180px;
+    margin-left: 250px;
+    color: rgb(13, 7, 49);
+    position: absolute;
+    background-color: rgba(9, 237, 96, 0.409);
+    height: 330px;
+    width: 870px;
+    border-radius: 10px; /* Añadir esquinas redondeadas */
+  }
+
+  select {
+    transition: all 0.3s ease;
+    background-color: rgba(9, 237, 96, 0.409);
+    color:rgb(0, 0, 0);
+    font-family: "Arial", sans-serif;
+            font-size: 12px;
+            font-weight: bold;
+}
+
+select:hover {
+    transform: scale(1.10);
+}
+
+.selector {
+    margin-top: -280px;
+    margin-left: 440px;
+    position: absolute;
+}
+
+.leaflet-container {
+    width: 870px; 
+    height: 350px;
+    margin-top: -430px;
+    margin-left: 250px;
+    position: absolute;    
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+.leaflet-popup-content {
+    background-color: #553f00;
+    color: #fff;
+    padding: 10px;
+}
+
+.map-container {
+    background-color: #272727;
+}
+
+.leaflet-marker-icon {
+    width: 10px; /* Ajusta el ancho según tus necesidades */
+    height: 30px; /* Ajusta el alto según tus necesidades */
+    margin: 0; /* Asegúrate de eliminar cualquier margen existente */
+}
