@@ -9,9 +9,6 @@ function App() {
   const [data, setData] = useState(null)
   const [loading, setLoading] = useState(true)
   const climaURL = "https://api.open-meteo.com/v1/forecast?latitude=-32.9468&longitude=-60.6393&current=temperature_2m,relativehumidity_2m,precipitation,weathercode,surface_pressure,windspeed_10m&hourly=temperature_2m&daily=temperature_2m_max,temperature_2m_min,sunrise,sunset&timezone=America/Rosario"
-  const [dataT, setDataT] = useState(null)
-  const [loadingT, setLoadingT] = useState(true)
-  const transporteURL = "https://apitransporte.buenosaires.gob.ar/colectivos/vehiclePositionsSimple?client_id=cb6b18c84b3b484d98018a791577af52&client_secret=3e3DB105Fbf642Bf88d5eeB8783EE1E6"
 
   const getData = async () => {
     try {
