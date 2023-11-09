@@ -17,9 +17,6 @@ function App() {
         const data = await response.json();
         setData(data); // Actualiza el estado data con los datos recibidos
         setLoading(false); // Cambia el estado de loading a false para indicar que los datos han sido cargados
-        console.log(data);
-        console.log(data.timezone);
-        console.log(data.current.time);
       } else {
         console.error('Error en la respuesta de la API');
         setLoading(false); 
