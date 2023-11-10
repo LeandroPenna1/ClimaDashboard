@@ -24,7 +24,7 @@ function DashboardTransporte() {
       .then((data) => {
         setTransporteData(data);
         console.log("Datos de la API:", data);
-      })
+      },)
       .catch((ex) => {
         console.error(ex);
       })

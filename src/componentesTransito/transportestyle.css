@@ -36,11 +36,14 @@ select:hover {
     position: absolute;    
     border: 2px solid #000;
     border-radius: 5px;
+    z-index: 1;
 }
 .leaflet-popup-content {
     background-color: #553f00;
     color: #fff;
     padding: 10px;
+    z-index: 1000; /* Ajusta según sea necesario */
+
 }
 
 .map-container {
