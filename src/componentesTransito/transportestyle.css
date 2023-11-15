@@ -10,6 +10,8 @@
   }
 
   select {
+    width: 50px;
+    margin-top: -100px;
     transition: all 0.3s ease;
     background-color: rgba(9, 237, 96, 0.409);
     color:rgb(0, 0, 0);
@@ -21,11 +23,20 @@
 select:hover {
     transform: scale(1.10);
 }
-
+/* 
 .selector {
     margin-top: -280px;
     margin-left: 440px;
     position: absolute;
+} */
+.selector-container {
+    margin-top: -280px;
+    margin-left: 1121px;
+}
+
+.map-container {
+    margin-top: 260px;
+    margin-left: -0px;
 }
 
 .leaflet-container {
@@ -54,4 +65,10 @@ select:hover {
     width: 10px; /* Ajusta el ancho según tus necesidades */
     height: 30px; /* Ajusta el alto según tus necesidades */
     margin: 0; /* Asegúrate de eliminar cualquier margen existente */
+}
+
+.selectCity {
+    margin-top: 10px;
+    margin-left: 570px;
+    position: absolute;
 }

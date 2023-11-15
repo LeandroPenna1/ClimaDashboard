@@ -3,8 +3,6 @@ import Mapa from "./Mapa";
 import './transportestyle.css';
 import L from 'leaflet';
 
-
-
 function DashboardTransporte() {
   const [loading, setLoading] = useState(true);
   const [selectedLine, setSelectedLine] = useState("a José C. Paz");
@@ -48,16 +46,20 @@ function DashboardTransporte() {
     "a José C. Paz": "1357",
     "a Stefani x Cruce": "1358",
     "a Derqui x Saavedra Lamas": "1354",
+    "a Est. Claypole": "1812",
+    "a Rincon de Milberg": "1816",
   }
 
   return (
     <>
       <div className="selector-container">
-        <select className="selector-container" value={selectedLine} onChange={(e) => setSelectedLine(e.target.value)}>
+        <select className="selector" value={selectedLine} onChange={(e) => setSelectedLine(e.target.value)}>
           <option value="">Selecciona una opción</option>
-          <option key={1} value={"a José C. Paz"}> a José C. Paz </option>
-          <option key={2} value={"a Stefani x Cruce"}> a Stefani x Cruce </option>
-          <option key={3} value={"a Derqui x Saavedra Lamas"}> a Derqui x Saavedra Lamas </option>
+          <option key={1} value={"a José C. Paz"}> 39A </option>
+          <option key={2} value={"a Stefani x Cruce"}> 39B </option>
+          <option key={3} value={"a Derqui x Saavedra Lamas"}> 39C </option>
+          <option key={3} value={"a Est. Claypole"}> 60C </option>
+          <option key={3} value={"a Rincon de Milberg"}> 60E </option>
         </select>
       </div>
       <Mapa data={transporteData} selectedLine={selectedLine} />

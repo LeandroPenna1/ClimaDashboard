@@ -1,42 +1,46 @@
-import './App.css';
-import { useState, useEffect } from 'react';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Dashboard from './componentesClima/dashboardClima';
 import DashboardTransporte from './componentesTransito/dashboardTransporte';
-import weatherCode from './componentesClima/weatherCode.json';
 
 function App() {
-  const [data, setData] = useState(null)
-  const [loading, setLoading] = useState(true)
-  const climaURL = "https://api.open-meteo.com/v1/forecast?latitude=-32.9468&longitude=-60.6393&current=temperature_2m,relativehumidity_2m,precipitation,weathercode,surface_pressure,windspeed_10m&hourly=temperature_2m&daily=temperature_2m_max,temperature_2m_min,sunrise,sunset&timezone=America/Rosario"
+  const [ciudad, setCiudad] = useState('Rosario');
+  const [ciudadInfo, setCiudadInfo] = useState(null);
 
-  const getData = async () => {
+  const handleSearch = async () => {
     try {
-      const response = await fetch(climaURL);
-      if (response.ok) {
-        const data = await response.json();
-        setData(data); // Actualiza el estado data con los datos recibidos
-        setLoading(false); // Cambia el estado de loading a false para indicar que los datos han sido cargados
+      const geocodingURL = `https://geocoding-api.open-meteo.com/v1/search?name=${ciudad}&count=4&language=es&format=json`;
+      const geocodingResponse = await fetch(geocodingURL);
+      const geocodingData = await geocodingResponse.json();
+
+      // Assuming the first result is selected, you might want to implement a selection UI
+      const selectedCiudad = geocodingData.results[0];
+
+      const weatherURL = `https://api.open-meteo.com/v1/forecast?latitude=${selectedCiudad.latitude}&longitude=${selectedCiudad.longitude}&current=temperature_2m,relativehumidity_2m,precipitation,weathercode,surface_pressure,windspeed_10m&hourly=temperature_2m&daily=temperature_2m_max,temperature_2m_min,sunrise,sunset&timezone=${selectedCiudad.timezone}`;
+
+      const weatherResponse = await fetch(weatherURL);
+      if (weatherResponse.ok) {
+        const weatherData = await weatherResponse.json();
+        setCiudadInfo(weatherData);
       } else {
-        console.error('Error en la respuesta de la API');
-        setLoading(false); 
+        console.error('Error en la respuesta de la API del clima');
       }
     } catch (error) {
       console.error('Error al obtener los datos:', error);
-      setLoading(false); 
     }
-  }; 
- 
-  useEffect(() => {
-    getData();
-  }, []);
-  
+  };
 
   return (
     <div className="App">
-      <div> 
+      <div className='selectCity'>
+        <input
+          type="text"
+          value={ciudad}
+          onChange={(e) => setCiudad(e.target.value)}
+          placeholder="Escriba una ciudad"
+        />
+        <button onClick={handleSearch}>Buscar</button>
       </div>
-      <Dashboard data={data}/>
+      <Dashboard data={ciudadInfo}  ciudad={ciudad} />
       <DashboardTransporte />
     </div>
   );

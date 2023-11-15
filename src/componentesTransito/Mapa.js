@@ -37,7 +37,9 @@ function Mapa({ data, selectedLine }) {
   return (
     <Marker position={[bondi.latitude, bondi.longitude]} key={bondi.id} icon={customIcon}>
       <Popup>
-        Línea {bondi["route_short_name"]}
+        Línea {bondi["route_short_name"]} <br/>
+        Agencia: {bondi["agency_name"]} <br/>
+        Velocidad: {bondi["speed"] + " km/h"}
       </Popup>
     </Marker>
   );

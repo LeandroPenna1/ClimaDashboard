@@ -1,9 +1,9 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useEffect, useState } from "react";
 import './style.css';
 import weatherCode from './weatherCode.json';
+import App from "../App";
 
-function Dashboard({data}) {
+function Dashboard({ data, ciudad }) {
   if (!data) {
     // En caso que los datos no hayan sido cargados,se muestra un mensaje de carga
     return <div>Cargando...</div>;
@@ -11,13 +11,13 @@ function Dashboard({data}) {
   const weatherInfo = weatherCode[data?.current?.weathercode];
   const weatherName = weatherInfo?.name;
   const weatherImageSrc = weatherInfo?.img_src;
-  
+
   //formateo para obtener la fecha y la hora por separado:
   const fecha = data?.current?.time;
   const fechaHoy = new Date(fecha);
   const horaHoy = fechaHoy.getHours();
   const minutosHoy = fechaHoy.getMinutes();
-  const opcionesMeses = {month: 'long'};
+  const opcionesMeses = { month: 'long' };
   const nombreDelMes = fecha.toLocaleString('es-ES', opcionesMeses);
   const horaFormateada = `${horaHoy}:${minutosHoy}`;
   const opcionesDeFecha = { weekday: 'long' };
@@ -35,9 +35,7 @@ function Dashboard({data}) {
   const puestaFormateada = `${horaPuesta}:${minutosPuesta}`;
   //Se obtiene las temperaturas del día
   const temperaturasDelDia = (data?.hourly?.temperature_2m.slice(0, 24));
-  
-
-  return ( 
+  return (
     <div className="contenedor">
       <div className="ahora">
         <div className="dia">{nombreDelDia} {fechaHoy.getDate()}  </div>
@@ -45,10 +43,10 @@ function Dashboard({data}) {
       </div>
       <div className="temperatura">
         <h3>Temperatura Actual</h3>
-        <h4 className='nombreCiudad'>{data.timezone}</h4>
+        <h4 className='nombreCiudad'>{ciudad}</h4>
         <h2 className='tempActual'>{Math.floor(data?.current?.temperature_2m)}°</h2>
         {weatherImageSrc && (
-        <img className='icon' src={weatherImageSrc} alt={weatherName} />
+          <img className='icon' src={weatherImageSrc} alt={weatherName} />
         )}
         <h4 className='estadoTiempo'>{weatherInfo?.name}</h4>
 
@@ -69,7 +67,7 @@ function Dashboard({data}) {
         <div className="hora1">{temperaturasDelDia[22]}</div>
       </div>
       <div className="transporte" id='trans'>
-        <h4>MAPA E INFO TRANSPORTE</h4>
+        <h4>No se encontró información de la línea elegida. <br></br> Por favor, ingresa otra.</h4>
       </div>
       <div className="maxmin">
         <h3>Máximas y Mínimas</h3>
@@ -90,7 +88,7 @@ function Dashboard({data}) {
         <div className="hl"><img className='iconEC' src='https://bmcdn.nl/assets/weather-icons/v3.0/fill/svg/sunset.svg'></img><strong>Puesta del sol: {puestaFormateada}hs</strong></div>
 
       </div>
-    </div> 
+    </div>
   );
 }
 
