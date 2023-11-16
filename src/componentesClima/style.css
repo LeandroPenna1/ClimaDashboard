@@ -149,9 +149,10 @@ h2 {
 }
 .tempActual {
   margin-top: -10px;
+  margin-left: 30px;
 }
 .estadoTiempo {
-  margin-top: -40px;
+  margin-top: -20px;
 }
 
 /* CONTENEDOR HIGHLIGHTS */
@@ -195,4 +196,7 @@ h2 {
   margin-top: 0px;
 }
 
-
+#Cargando {
+  color: aliceblue;
+  margin-left: 300px;
+}

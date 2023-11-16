@@ -11,12 +11,12 @@ function Mapa({ data, selectedLine }) {
 
   if (!data || data.length === 0) {
     // Maneja el caso en el que transporteData aún no está disponible o es vacío
-    return <div>Cargando...</div>;
+    console.log("Cargando")
   }
   const firstData = data[0];
   if (!firstData || !firstData.latitude || !firstData.longitude) {
     // Maneja el caso en el que la primera entrada de datos no tiene coordenadas definidas
-    return <div>Coordenadas no disponibles</div>;
+    return <div className="Coordenadas">Coordenadas no disponibles</div>;
   }
 
   const customIcon = L.icon({

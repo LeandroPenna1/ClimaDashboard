@@ -6,7 +6,7 @@ import App from "../App";
 function Dashboard({ data, ciudad }) {
   if (!data) {
     // En caso que los datos no hayan sido cargados,se muestra un mensaje de carga
-    return <div>Cargando...</div>;
+    return <div id="Cargando">Para comenzar, ingresa una ciudad:</div>;
   }
   const weatherInfo = weatherCode[data?.current?.weathercode];
   const weatherName = weatherInfo?.name;
